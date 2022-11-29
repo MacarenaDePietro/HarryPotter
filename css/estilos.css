@@ -1,0 +1,530 @@
+@charset "UTF-8";
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-flex;
+  padding: 1px;
+  color: black;
+}
+
+.barraNav {
+  background-color: rgb(240, 168, 218);
+  border: solid black;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  color: black;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body {
+  background-color: bisque;
+  height: 100vh;
+}
+
+footer {
+  background-color: rgb(252, 202, 109);
+  font-size: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* index */
+.textoInicial {
+  background-color: antiquewhite;
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem;
+  padding: 4rem;
+}
+
+.imgIndex {
+  background-color: antiquewhite;
+  width: 391px;
+  height: auto;
+  padding: 16px;
+  margin: 21px;
+  border: solid black;
+  background-size: cover;
+}
+
+.textoInicial {
+  grid-area: texto;
+}
+
+.imgIndex {
+  grid-area: imagen;
+}
+
+/* autora */
+.historia {
+  background-color: crimson;
+  text-align: center;
+  padding: 5px;
+  font-size: 3rem;
+}
+
+.rowling {
+  background-color: coral;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  border-style: solid;
+  margin: 1rem;
+}
+
+.tituloAutora {
+  font-size: 3rem;
+}
+
+.inspiraciones {
+  background-color: rgb(255, 160, 160);
+  padding: 2rem;
+  margin: 2rem;
+  text-align: start;
+  font-size: 1.5rem;
+  border: solid black;
+  text-align: center;
+}
+
+.historia {
+  grid-area: historia;
+}
+
+.rowling {
+  grid-area: escritora;
+}
+
+.inspiraciones {
+  grid-area: inspiraciones;
+}
+
+/* personajes principales */
+.tituloP {
+  background-color: rgb(247, 162, 92);
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.harry,
+.ron,
+.hermione,
+.voldemort,
+.dumbledore,
+.snape,
+.hagrid,
+.minerva,
+.draco,
+.sirius {
+  background-color: burlywood;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  margin: 2rem;
+  border: solid black;
+  display: flex;
+}
+
+.tituloP {
+  grid-area: principales;
+}
+
+.harry {
+  grid-area: harry;
+}
+
+.ron {
+  grid-area: ron;
+}
+
+.hermione {
+  grid-area: hermione;
+}
+
+.voldemort {
+  grid-area: voldemort;
+}
+
+.dumbledore {
+  grid-area: dumbledore;
+}
+
+.snape {
+  grid-area: snape;
+}
+
+.hagrid {
+  grid-area: hagrid;
+}
+
+.minerva {
+  grid-area: minerva;
+}
+
+.draco {
+  grid-area: draco;
+}
+
+.sirius {
+  grid-area: sirius;
+}
+
+/* personajes secundarios */
+.tituloS {
+  background-color: darksalmon;
+  font-size: 3rem;
+  padding: 2rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.neville,
+.luna,
+.remus,
+.lucius,
+.arthur,
+.fred,
+.george,
+.ginevra,
+.molly,
+.percy {
+  display: flex;
+  background-color: burlywood;
+  border: solid black;
+  margin: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.tituloS {
+  grid-area: secundarios;
+}
+
+.neville {
+  grid-area: neville;
+}
+
+.luna {
+  grid-area: luna;
+}
+
+.remus {
+  grid-area: remus;
+}
+
+.lucius {
+  grid-area: lucius;
+}
+
+.arthur {
+  grid-area: arthur;
+}
+
+.fred {
+  grid-area: fred;
+}
+
+.george {
+  grid-area: george;
+}
+
+.ginevra {
+  grid-area: ginevra;
+}
+
+.molly {
+  grid-area: molly;
+}
+
+.percy {
+  grid-area: percy;
+}
+
+/* noticias */
+.notas {
+  background-color: rgb(240, 150, 150);
+  text-align: center;
+  font-size: 2rem;
+  border: ridge black;
+  border-radius: 10px;
+  margin: 2rem;
+}
+
+.articulos {
+  background-color: coral;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.info {
+  width: 330px;
+  height: 450px;
+  background-color: aliceblue;
+  padding: 1rem;
+  margin: 10px;
+  font-size: 1.5rem;
+  border: solid black;
+  text-align: center;
+  justify-content: center;
+}
+
+.notas {
+  grid-area: tituloNoti;
+}
+
+.articulos {
+  grid-area: articulos;
+}
+
+/* peliculas */
+.cronológico {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  border-style: dashed;
+  background-color: coral;
+  margin-top: 2rem;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.pelis {
+  background-color: lightsalmon;
+  text-align: center;
+  font-size: 1.5rem;
+  border: solid;
+  margin: 5rem;
+}
+
+.cronológico {
+  grid-area: cronologico;
+}
+
+.pelis {
+  grid-area: pelis;
+}
+
+/* contacto */
+form {
+  border: solid black;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px;
+  margin: 15px 40px 250px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto2 {
+  text-align: center;
+  background-color: darksalmon;
+  margin: 70px 7px 30px 7px;
+  font-size: 30px;
+  border: double black;
+  align-content: space-between;
+}
+
+.contacto2 {
+  grid-area: contactoTitulo;
+}
+
+form {
+  grid-area: formulario;
+}
+
+@media (min-width: 0px) {
+  .inicio {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header" "texto" "imagen" "footer";
+  }
+  .autora {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header" "historia" "escritora" "inspiraciones" "footer";
+  }
+  .personajesPrinc {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header" "principales" "harry" "ron" "hermione" "voldemort" "dumbledore" "snape" "hagrid" "minerva" "draco" "sirius" "footer";
+  }
+  .personajesSec {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header" "secundarios" "neville" "luna" "remus" "lucius" "arthur" "fred" "george" "ginevra" "molly" "percy" "footer";
+  }
+  .tituloSec,
+.tituloPrinc {
+    font-size: 3rem;
+  }
+  .principales,
+.secundarios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+  }
+  .harry,
+.ron,
+.hermione,
+.voldemort,
+.dumbledore,
+.snape,
+.hagrid,
+.minerva,
+.draco,
+.sirius {
+    margin: 1.5rem;
+    font-size: 2rem;
+    flex-direction: column;
+    width: 450px;
+    height: 615px;
+    align-items: center;
+    justify-content: center;
+  }
+  .neville,
+.luna,
+.remus,
+.lucius,
+.arthur,
+.fred,
+.george,
+.ginevra,
+.molly,
+.percy {
+    margin: 1rem;
+    font-size: 2rem;
+    flex-direction: column;
+    width: 450px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+  }
+  .peliculas {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header" "cronologico" "pelis" "footer";
+  }
+  .noticias {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header" "tituloNoti" "articulos" "footer";
+  }
+  .contacto {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header" "contactoTitulo" "form" "footer";
+  }
+}
+@media (min-width: 500px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    font-size: 1.5rem;
+  }
+  .personajesSec {
+    justify-content: center;
+  }
+  .info {
+    height: 500px;
+  }
+  .contacto2 {
+    margin: 7rem;
+  }
+}
+@media (min-width: 1024px) {
+  .home {
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    justify-content: space-evenly;
+  }
+  header {
+    font-size: 2rem;
+  }
+  .textoInicial {
+    width: 520px;
+    height: auto;
+    font-size: 2rem;
+    padding: 3rem;
+    margin-right: 2rem;
+  }
+  .imgIndex {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 397px;
+    height: 300px;
+    padding: 16px;
+  }
+  .rowling {
+    width: 560px;
+    height: 900px;
+    font-size: 1.5rem;
+  }
+  .escritora {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .inspiraciones {
+    margin-top: 15px;
+    width: 500px;
+    height: 350px;
+  }
+  .pelis {
+    margin: 2rem 20rem 2rem 20rem;
+  }
+  .contacto2 {
+    margin: 3rem 10rem 3rem 10rem;
+  }
+  form {
+    margin-bottom: 20rem;
+  }
+}/*# sourceMappingURL=estilos.css.map */
