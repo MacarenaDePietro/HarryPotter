@@ -1,4 +1,22 @@
 @charset "UTF-8";
+/*extend*/
+.columnas, .col-md-4, .col-md-6, .col-md-3 {
+  width: 280px;
+}
+
+/*mixin*/
+.info {
+  width: 330px;
+  height: 450px;
+  background-color: aliceblue;
+  padding: 1rem;
+  margin: 10px;
+  font-size: 1.5rem;
+  border: solid black;
+  text-align: center;
+  justify-content: center;
+}
+
 * {
   padding: 0%;
   margin: 0%;
@@ -8,11 +26,39 @@ html {
   font-size: 62.5%;
 }
 
-ul li {
-  list-style-type: none;
+body {
+  background-color: bisque;
+  height: 100vh;
 }
 
-a {
+footer {
+  background-color: rgb(252, 202, 109);
+  font-size: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  font-size: 10px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 0px;
+  margin-bottom: 0.5px;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
   text-decoration: none;
   display: inline-flex;
   padding: 1px;
@@ -22,38 +68,189 @@ a {
 .barraNav {
   background-color: rgb(240, 168, 218);
   border: solid black;
-  border-radius: 1.5rem;
-  padding: 0.5rem;
+  border-radius: 15px;
+  padding: 0.7px;
   color: black;
 }
 
-header {
-  background-color: rgb(255, 255, 255);
-  font-size: 1.2rem;
+.textoInicial {
+  width: 330px;
+  background-color: antiquewhite;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px 10px 20px;
+  padding: 20px;
 }
 
-nav ul {
+.rowling {
+  width: 350px;
+  background-color: coral;
+  padding: 5px;
+  text-align: center;
+  font-size: 13px;
+  border-style: solid;
+  margin: 10px;
+}
+.rowling h2 {
+  font-size: 20px;
+}
+
+.historia {
+  background-color: crimson;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.inspiraciones {
+  width: 305px;
+  background-color: rgb(255, 160, 160);
+  padding: 5px;
+  margin: 2rem;
+  text-align: start;
+  font-size: 13px;
+  border: solid black;
+  text-align: center;
+}
+
+.tituloP {
+  background-color: rgb(247, 162, 92);
+  text-align: center;
+  padding: 2rem;
+  font-size: 20px;
+  margin: 2rem;
+}
+
+.harry,
+.ron,
+.hermione,
+.voldemort,
+.dumbledore,
+.snape,
+.hagrid,
+.minerva,
+.draco,
+.sirius {
+  background-color: burlywood;
+  text-align: center;
+  padding: 15px;
+  font-size: 10px;
+  margin: 15px;
+  border: solid black;
+  display: flex;
+}
+
+.tituloS {
+  background-color: darksalmon;
+  font-size: 3rem;
+  padding: 2rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.neville,
+.luna,
+.remus,
+.lucius,
+.arthur,
+.fred,
+.george,
+.ginevra,
+.molly,
+.percy {
+  display: flex;
+  background-color: burlywood;
+  border: solid black;
+  margin: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.notas {
+  background-color: rgb(240, 150, 150);
+  text-align: center;
+  font-size: 2rem;
+  border: ridge black;
+  border-radius: 10px;
+  margin: 2rem;
+}
+
+.articulos {
+  background-color: coral;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.info {
+  width: 330px;
+  height: 450px;
+  background-color: aliceblue;
+  padding: 1rem;
+  margin: 10px;
+  font-size: 1.5rem;
+  border: solid black;
+  text-align: center;
+  justify-content: center;
+}
+
+.cronológico {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  border-style: dashed;
+  background-color: coral;
+  margin-top: 2rem;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.pelis {
+  background-color: lightsalmon;
+  text-align: center;
+  font-size: 1.5rem;
+  border: solid;
+  margin: 5rem;
+}
+
+.imgIndex {
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  margin: 20px 10px 20px 15px;
+  background-size: cover;
+}
+
+.textoContacto {
+  width: 265px;
+  background-color: coral;
+  font-size: 16px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  margin-left: 50px;
 }
 
-body {
-  background-color: bisque;
-  height: 100vh;
+form {
+  width: 277px;
+  border: solid black;
+  text-align: center;
+  font-size: 13px;
+  padding: 2px;
 }
 
-footer {
-  background-color: rgb(252, 202, 109);
-  font-size: 1.5rem;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0;
-  position: -webkit-sticky;
-  position: sticky;
+.row {
+  margin: 50px;
+}
+
+.contacto2 {
+  text-align: center;
+  background-color: darksalmon;
+  margin: 70px 7px 30px 7px;
+  font-size: 20px;
+  border-radius: 15px;
 }
 
 header {
@@ -70,24 +267,6 @@ footer {
 
 /* index */
 .textoInicial {
-  background-color: antiquewhite;
-  font-size: 2rem;
-  text-align: center;
-  margin: 2rem;
-  padding: 4rem;
-}
-
-.imgIndex {
-  background-color: antiquewhite;
-  width: 391px;
-  height: auto;
-  padding: 16px;
-  margin: 21px;
-  border: solid black;
-  background-size: cover;
-}
-
-.textoInicial {
   grid-area: texto;
 }
 
@@ -96,36 +275,6 @@ footer {
 }
 
 /* autora */
-.historia {
-  background-color: crimson;
-  text-align: center;
-  padding: 5px;
-  font-size: 3rem;
-}
-
-.rowling {
-  background-color: coral;
-  padding: 2rem;
-  text-align: center;
-  font-size: 2rem;
-  border-style: solid;
-  margin: 1rem;
-}
-
-.tituloAutora {
-  font-size: 3rem;
-}
-
-.inspiraciones {
-  background-color: rgb(255, 160, 160);
-  padding: 2rem;
-  margin: 2rem;
-  text-align: start;
-  font-size: 1.5rem;
-  border: solid black;
-  text-align: center;
-}
-
 .historia {
   grid-area: historia;
 }
@@ -139,33 +288,6 @@ footer {
 }
 
 /* personajes principales */
-.tituloP {
-  background-color: rgb(247, 162, 92);
-  text-align: center;
-  padding: 2rem;
-  font-size: 2rem;
-  margin: 2rem;
-}
-
-.harry,
-.ron,
-.hermione,
-.voldemort,
-.dumbledore,
-.snape,
-.hagrid,
-.minerva,
-.draco,
-.sirius {
-  background-color: burlywood;
-  text-align: center;
-  padding: 2rem;
-  font-size: 1.2rem;
-  margin: 2rem;
-  border: solid black;
-  display: flex;
-}
-
 .tituloP {
   grid-area: principales;
 }
@@ -212,32 +334,6 @@ footer {
 
 /* personajes secundarios */
 .tituloS {
-  background-color: darksalmon;
-  font-size: 3rem;
-  padding: 2rem;
-  margin: 2rem;
-  text-align: center;
-}
-
-.neville,
-.luna,
-.remus,
-.lucius,
-.arthur,
-.fred,
-.george,
-.ginevra,
-.molly,
-.percy {
-  display: flex;
-  background-color: burlywood;
-  border: solid black;
-  margin: 2rem;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-.tituloS {
   grid-area: secundarios;
 }
 
@@ -283,35 +379,6 @@ footer {
 
 /* noticias */
 .notas {
-  background-color: rgb(240, 150, 150);
-  text-align: center;
-  font-size: 2rem;
-  border: ridge black;
-  border-radius: 10px;
-  margin: 2rem;
-}
-
-.articulos {
-  background-color: coral;
-  padding: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.info {
-  width: 330px;
-  height: 450px;
-  background-color: aliceblue;
-  padding: 1rem;
-  margin: 10px;
-  font-size: 1.5rem;
-  border: solid black;
-  text-align: center;
-  justify-content: center;
-}
-
-.notas {
   grid-area: tituloNoti;
 }
 
@@ -321,25 +388,6 @@ footer {
 
 /* peliculas */
 .cronológico {
-  text-align: center;
-  font-size: 2rem;
-  padding: 1rem;
-  border-style: dashed;
-  background-color: coral;
-  margin-top: 2rem;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-.pelis {
-  background-color: lightsalmon;
-  text-align: center;
-  font-size: 1.5rem;
-  border: solid;
-  margin: 5rem;
-}
-
-.cronológico {
   grid-area: cronologico;
 }
 
@@ -348,27 +396,12 @@ footer {
 }
 
 /* contacto */
-form {
-  border: solid black;
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 20px;
-  margin: 15px 40px 250px 40px;
-  display: flex;
-  flex-direction: column;
-}
-
-.contacto2 {
-  text-align: center;
-  background-color: darksalmon;
-  margin: 70px 7px 30px 7px;
-  font-size: 30px;
-  border: double black;
-  align-content: space-between;
-}
-
 .contacto2 {
   grid-area: contactoTitulo;
+}
+
+.textoContacto {
+  grid-area: textoContacto;
 }
 
 form {
@@ -398,7 +431,7 @@ form {
   }
   .tituloSec,
 .tituloPrinc {
-    font-size: 3rem;
+    font-size: 30px;
   }
   .principales,
 .secundarios {
@@ -418,10 +451,10 @@ form {
 .draco,
 .sirius {
     margin: 1.5rem;
-    font-size: 2rem;
+    font-size: 13px;
     flex-direction: column;
-    width: 450px;
-    height: 615px;
+    width: 346px;
+    height: 497px;
     align-items: center;
     justify-content: center;
   }
@@ -436,10 +469,10 @@ form {
 .molly,
 .percy {
     margin: 1rem;
-    font-size: 2rem;
+    font-size: 13px;
     flex-direction: column;
-    width: 450px;
-    height: 500px;
+    width: 333px;
+    height: 395px;
     align-items: center;
     justify-content: center;
   }
@@ -456,15 +489,24 @@ form {
   .contacto {
     display: grid;
     width: 100%;
-    grid-template-areas: "header" "contactoTitulo" "form" "footer";
+    grid-template-areas: "header" "contactoTitulo" "textoContacto" "form" "footer";
   }
-}
-@media (min-width: 500px) {
   .home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .escritora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 500px) {
+  .textoInicial {
+    width: 450px;
   }
   header {
     font-size: 1.5rem;
@@ -475,8 +517,22 @@ form {
   .info {
     height: 500px;
   }
-  .contacto2 {
-    margin: 7rem;
+  .textoContacto {
+    margin-left: 10px;
+  }
+  .flexContacto, .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .row {
+    width: 300px;
+  }
+  .rowling {
+    width: 501px;
+    height: 971px;
   }
 }
 @media (min-width: 1024px) {
@@ -504,27 +560,29 @@ form {
     padding: 16px;
   }
   .rowling {
-    width: 560px;
-    height: 900px;
     font-size: 1.5rem;
   }
   .escritora {
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
   }
   .inspiraciones {
     margin-top: 15px;
-    width: 500px;
+    width: 486px;
     height: 350px;
   }
   .pelis {
-    margin: 2rem 20rem 2rem 20rem;
+    margin: 10px;
   }
-  .contacto2 {
-    margin: 3rem 10rem 3rem 10rem;
+  .textoContacto {
+    height: 200px;
+    margin-left: 10px;
   }
   form {
-    margin-bottom: 20rem;
+    width: 450px;
+  }
+  .flexContacto {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=estilos.css.map */

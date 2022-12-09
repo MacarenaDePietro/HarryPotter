@@ -1,0 +1,27 @@
+/*extend*/
+
+.columnas {
+    width: 280px;
+}
+
+.col-md-4, .col-md-6, .col-md-3{
+    @extend .columnas;
+}
+
+/*mixin*/
+
+@mixin sizes ($width, $heigth){
+    width: $width;
+    height: $heigth;
+}
+
+.info {
+    @include sizes(330px,450px);
+    background-color: aliceblue;
+    padding: 1rem;
+    margin: 10px;
+    font-size: 1.5rem;
+    border: solid black;
+    text-align: center;
+    justify-content: center;
+}

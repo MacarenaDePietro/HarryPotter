@@ -17,11 +17,9 @@
         <header>
             <nav>
                 <ul>
-                    <li data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-in-sine">
+                    <li data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                         <a href="../index.html"><img src="../img/logo-black-harry-potter-in-font-1600339.png"
-                                alt="logo harry potter" width="90"> </a>
+                                alt="logo harry potter" width="75"> </a>
                     </li>
                     <li class="barraNav">
                         <a href="./autora.html">Autora</a>
@@ -49,21 +47,77 @@
         </header>
 
         <main>
-            <section class="contacto2">
-                <h1>¿Querés recibir información de esta página?</h1>
-            </section>
+            <div>
+                    <h1 class="contacto2">¿Querés recibir información de esta página?</h1>
+                </div>
+            <section class="flexContacto">
+                <div class="textoContacto">
+                    Si queres recibir información, te pedimos que completes los datos siguientes para que podamos
+                    enviarte las actualizaciones de la página y todo lo relacionado a Harry Potter.
+                </div>
 
-            <form>
-                <label for="nombre">Nombre:</label> <input type="text" name="nombre" placeholder="Bill" maxlength="15"
-                    required />
-                <label for="apellido">Apellido:</label> <input type="text" name="apellido" placeholder="Gates"
-                    maxlength="15" required />
-                <label for="email">Email:</label> <input type="email" name="email" placeholder="billgates@hotmail.com"
-                    maxlength="30" required />
-                <label for="telefono">Teléfono:</label> <input type="tel" name="telefono" placeholder="+54-xxxxxxxxx"
-                    maxlength="15" required />
-                <input type="submit" value="Enviar">
-            </form>
+                <form class="row g-3">
+                    <div class="col-md-4">
+                        <label for="validationServer01" class="form-label">Nombre</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                        <div class="valid-feedback">
+                            Muy bien!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationServer02" class="form-label">Apellido</label>
+                        <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                        <div class="valid-feedback">
+                            Muy bien!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationServerUsername" class="form-label">E-mail</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend3">e-mail</span>
+                            <input type="text" class="form-control is-invalid" id="validationServerE-mail"
+                                aria-describedby="inputGroupPrepend3 validationServerE-mailFeedback" required>
+                            <div id="validationServerE-mailFeedback" class="invalid-feedback">
+                                Escriba su E-mail válido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationServer03" class="form-label">Provincia</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer03"
+                            aria-describedby="validationServer03Feedback" required>
+                        <div id="validationServer03Feedback" class="invalid-feedback">
+                            Por favor seleccione una provicia.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationServer04" class="form-label">Ciudad</label>
+                        <select class="form-select is-invalid" id="validationServer04"
+                            aria-describedby="validationServer04Feedback" required>
+                            <option selected disabled value="">Elegir...</option>
+                            <option>...</option>
+                        </select>
+                        <div id="validationServer04Feedback" class="invalid-feedback">
+                            Por favor seleccione una ciudad
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
+                                aria-describedby="invalidCheck3Feedback" required>
+                            <label class="form-check-label" for="invalidCheck3">
+                                Acepto recibir información.
+                            </label>
+                            <div id="invalidCheck3Feedback" class="invalid-feedback">
+                                Por favor seleccione para recibir información.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </section>
         </main>
 
         <footer id="pie">

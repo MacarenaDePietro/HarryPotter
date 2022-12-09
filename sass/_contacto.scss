@@ -1,0 +1,30 @@
+.textoContacto{
+    width: 265px;
+    background-color: coral;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+form{
+    width: 277px;
+    border: solid black;
+    text-align: center;
+    font-size: 13px;
+    padding: 2px;
+}
+
+.row{
+    margin: 50px;
+}
+
+.contacto2 {
+    text-align: center;
+    background-color: darksalmon;
+    margin: 70px 7px 30px 7px;
+    font-size: 20px;
+    border-radius: 15px;
+}
