@@ -1,16 +1,18 @@
 .textoContacto{
     width: 265px;
+    border: solid black;
     background-color: coral;
     font-size: 16px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-align: center;
     margin: 10px;
     margin-left: 50px;
 }
 
 form{
-    width: 277px;
+    width: 263px;
     border: solid black;
     text-align: center;
     font-size: 13px;

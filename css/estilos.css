@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*extend*/
 .columnas, .col-md-4, .col-md-6, .col-md-3 {
-  width: 280px;
+  width: 246px;
 }
 
 /*mixin*/
@@ -78,12 +78,12 @@ header nav ul li a {
   background-color: antiquewhite;
   font-size: 1.5rem;
   text-align: center;
-  margin: 20px 10px 20px;
+  margin: 30px 10px 37px 10px;
   padding: 20px;
 }
 
 .rowling {
-  width: 350px;
+  width: 300px;
   background-color: coral;
   padding: 5px;
   text-align: center;
@@ -103,7 +103,7 @@ header nav ul li a {
 }
 
 .inspiraciones {
-  width: 305px;
+  width: 297px;
   background-color: rgb(255, 160, 160);
   padding: 5px;
   margin: 2rem;
@@ -184,7 +184,7 @@ header nav ul li a {
 }
 
 .info {
-  width: 330px;
+  width: 318px;
   height: 450px;
   background-color: aliceblue;
   padding: 1rem;
@@ -207,34 +207,37 @@ header nav ul li a {
 }
 
 .pelis {
+  width: 317px;
+  height: 712px;
   background-color: lightsalmon;
   text-align: center;
   font-size: 1.5rem;
   border: solid;
-  margin: 5rem;
+  margin: 18px;
 }
 
 .imgIndex {
-  width: 300px;
+  width: 288px;
   height: auto;
-  padding: 10px;
-  margin: 20px 10px 20px 15px;
+  margin-bottom: 45px;
   background-size: cover;
 }
 
 .textoContacto {
   width: 265px;
+  border: solid black;
   background-color: coral;
   font-size: 16px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  text-align: center;
   margin: 10px;
   margin-left: 50px;
 }
 
 form {
-  width: 277px;
+  width: 263px;
   border: solid black;
   text-align: center;
   font-size: 13px;
@@ -453,7 +456,7 @@ form {
     margin: 1.5rem;
     font-size: 13px;
     flex-direction: column;
-    width: 346px;
+    width: 324px;
     height: 497px;
     align-items: center;
     justify-content: center;
@@ -503,6 +506,12 @@ form {
     justify-content: center;
     align-items: center;
   }
+  .cronologia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (min-width: 500px) {
   .textoInicial {
@@ -514,8 +523,12 @@ form {
   .personajesSec {
     justify-content: center;
   }
+  .pelis {
+    width: 480px;
+    height: 569px;
+  }
   .info {
-    height: 500px;
+    height: 524px;
   }
   .textoContacto {
     margin-left: 10px;
@@ -528,18 +541,21 @@ form {
     margin-bottom: 50px;
   }
   .row {
-    width: 300px;
+    width: 436px;
   }
   .rowling {
     width: 501px;
-    height: 971px;
+    height: 795px;
+  }
+  .inspiraciones {
+    width: 500px;
   }
 }
 @media (min-width: 1024px) {
   .home {
     flex-direction: row;
     margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 43px;
     justify-content: space-evenly;
   }
   header {
@@ -561,6 +577,7 @@ form {
   }
   .rowling {
     font-size: 1.5rem;
+    height: 921px;
   }
   .escritora {
     flex-direction: row;
@@ -570,10 +587,12 @@ form {
   .inspiraciones {
     margin-top: 15px;
     width: 486px;
-    height: 350px;
+    height: 230px;
   }
   .pelis {
     margin: 10px;
+    width: 900px;
+    height: 423px;
   }
   .textoContacto {
     height: 200px;
@@ -584,5 +603,11 @@ form {
   }
   .flexContacto {
     flex-direction: row;
+  }
+  .row {
+    width: 560px;
+  }
+  .col-md-4, .col-md-6, .col-md-3 {
+    width: 540px;
   }
 }/*# sourceMappingURL=estilos.css.map */
