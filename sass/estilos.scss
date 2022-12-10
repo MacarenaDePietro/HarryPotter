@@ -323,6 +323,18 @@ form {
         justify-content: center;
         align-items: center;
     }
+    
+    .info {
+        height: 524px;
+    }
+
+    .flexContacto, .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 }
 
 @media (min-width:500px){
@@ -346,18 +358,10 @@ form {
 
 
     .info {
-        height: 524px;
+        height: 554px;
     }
     .textoContacto{
         margin-left: 10px;
-    }
-
-    .flexContacto, .row{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 50px;
     }
 
     .row{
