@@ -234,45 +234,6 @@ form {
         justify-content: space-around;
         align-content: center;
     }
-
-    .harry,
-    .ron,
-    .hermione,
-    .voldemort,
-    .dumbledore,
-    .snape,
-    .hagrid,
-    .minerva,
-    .draco,
-    .sirius {
-        margin: 1.5rem;
-        font-size: 13px;
-        flex-direction: column;
-        width: 324px;
-        height: 497px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .neville,
-    .luna,
-    .remus,
-    .lucius,
-    .arthur,
-    .fred,
-    .george,
-    .ginevra,
-    .molly,
-    .percy {
-        margin: 1rem;
-        font-size: 13px;
-        flex-direction: column;
-        width: 333px;
-        height: 395px;
-        align-items: center;
-        justify-content: center;
-    }
-
     .peliculas{
         display: grid;
         width: 100%;
@@ -308,6 +269,7 @@ form {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 30px;
     }
 
     .escritora{
@@ -450,5 +412,10 @@ form {
 
     .col-md-4, .col-md-6, .col-md-3{
         width: 540px;
+    }
+
+    .contacto2{
+        margin-left: 81px;
+        margin-right: 81px;
     }
 }

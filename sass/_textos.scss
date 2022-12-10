@@ -1,10 +1,10 @@
 .textoInicial {
-    width: 330px;
+    width: 310px;
     background-color: antiquewhite;
-    font-size: 1.5rem;
+    font-size: 15px;
     text-align: center;
-    margin: 30px 10px 37px 10px;
-    padding: 20px;
+    margin: 50px 10px 40px 10px;
+    padding: 10px;
 }
 
 .rowling{
@@ -62,6 +62,13 @@
     margin: 15px;
     border: solid black;
     display: flex;
+    margin: 1.5rem;
+    font-size: 13px;
+    flex-direction: column;
+    width: 320px;
+    height: 497px;
+    align-items: center;
+    justify-content: center;
 }
 
 .tituloS {
@@ -88,6 +95,13 @@
     margin: 2rem;
     font-size: 1.2rem;
     text-align: center;
+    margin: 1rem;
+    font-size: 13px;
+    flex-direction: column;
+    width: 330px;
+    height: 395px;
+    align-items: center;
+    justify-content: center;
 }
 
 .notas {
@@ -108,7 +122,7 @@
 }
 
 .info {
-    width: 318px;
+    width: 310px;
     height: 450px;
     background-color: aliceblue;
     padding: 1rem;
@@ -131,7 +145,7 @@
 }
 
 .pelis {
-    width: 317px;
+    width: 310px;
     height: 712px;
     background-color: lightsalmon;
     text-align: center;

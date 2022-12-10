@@ -74,12 +74,12 @@ header nav ul li a {
 }
 
 .textoInicial {
-  width: 330px;
+  width: 310px;
   background-color: antiquewhite;
-  font-size: 1.5rem;
+  font-size: 15px;
   text-align: center;
-  margin: 30px 10px 37px 10px;
-  padding: 20px;
+  margin: 50px 10px 40px 10px;
+  padding: 10px;
 }
 
 .rowling {
@@ -138,6 +138,13 @@ header nav ul li a {
   margin: 15px;
   border: solid black;
   display: flex;
+  margin: 1.5rem;
+  font-size: 13px;
+  flex-direction: column;
+  width: 320px;
+  height: 497px;
+  align-items: center;
+  justify-content: center;
 }
 
 .tituloS {
@@ -164,6 +171,13 @@ header nav ul li a {
   margin: 2rem;
   font-size: 1.2rem;
   text-align: center;
+  margin: 1rem;
+  font-size: 13px;
+  flex-direction: column;
+  width: 330px;
+  height: 395px;
+  align-items: center;
+  justify-content: center;
 }
 
 .notas {
@@ -184,7 +198,7 @@ header nav ul li a {
 }
 
 .info {
-  width: 318px;
+  width: 310px;
   height: 450px;
   background-color: aliceblue;
   padding: 1rem;
@@ -207,7 +221,7 @@ header nav ul li a {
 }
 
 .pelis {
-  width: 317px;
+  width: 310px;
   height: 712px;
   background-color: lightsalmon;
   text-align: center;
@@ -217,10 +231,9 @@ header nav ul li a {
 }
 
 .imgIndex {
-  width: 288px;
-  height: auto;
+  width: 300px;
+  height: 250px;
   margin-bottom: 45px;
-  background-size: cover;
 }
 
 .textoContacto {
@@ -245,13 +258,13 @@ form {
 }
 
 .row {
-  margin: 50px;
+  margin: 30px;
 }
 
 .contacto2 {
   text-align: center;
   background-color: darksalmon;
-  margin: 70px 7px 30px 7px;
+  margin: 70px 20px 30px 20px;
   font-size: 20px;
   border-radius: 15px;
 }
@@ -443,42 +456,6 @@ form {
     justify-content: space-around;
     align-content: center;
   }
-  .harry,
-.ron,
-.hermione,
-.voldemort,
-.dumbledore,
-.snape,
-.hagrid,
-.minerva,
-.draco,
-.sirius {
-    margin: 1.5rem;
-    font-size: 13px;
-    flex-direction: column;
-    width: 324px;
-    height: 497px;
-    align-items: center;
-    justify-content: center;
-  }
-  .neville,
-.luna,
-.remus,
-.lucius,
-.arthur,
-.fred,
-.george,
-.ginevra,
-.molly,
-.percy {
-    margin: 1rem;
-    font-size: 13px;
-    flex-direction: column;
-    width: 333px;
-    height: 395px;
-    align-items: center;
-    justify-content: center;
-  }
   .peliculas {
     display: grid;
     width: 100%;
@@ -499,6 +476,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
   }
   .escritora {
     display: flex;
@@ -612,5 +590,9 @@ form {
   }
   .col-md-4, .col-md-6, .col-md-3 {
     width: 540px;
+  }
+  .contacto2 {
+    margin-left: 81px;
+    margin-right: 81px;
   }
 }/*# sourceMappingURL=estilos.css.map */
