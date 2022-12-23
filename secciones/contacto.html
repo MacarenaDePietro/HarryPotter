@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Recibir información sobre Harry Potter">
-    <meta name="keywords" content="E-mail, Contacto">
+    <meta name="description" content="Acá podrán dejar su e-mail para que les puedan llegar las actualizaciones de esta pagina y mucha más información">
+    <meta name="keywords" content="E-mail, Contacto, Formulario, Información">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -20,7 +20,8 @@
             <nav>
                 <ul>
                     <li data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                        <a href="../index.html"><img src="../img/logo-black-harry-potter-in-font-1600339.png" alt="logo harry potter" width="75"> </a>
+                        <a href="../index.html"><img src="../img/logo-black-harry-potter-in-font-1600339.png"
+                                alt="logo harry potter" width="75" height="50"> </a>
                     </li>
                     <li class="barraNav">
                         <a href="./autora.html">Autora</a>
@@ -34,90 +35,98 @@
                     <li class="barraNav">
                         <a href="./contacto.html">Contacto</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="barraNav nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Personajes
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="barraNav dropdown-item" href="./principales.html">Principales</a></li>
-                            <li><a class="barraNav dropdown-item" href="./secundarios.html">Secundarios</a></li>
-                        </ul>
-                </ul>
+                    <div class="conteiner-fluid">
+                        <li class="nav-item dropdown">
+                            <a class="barraNav nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Personajes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="barraNav dropdown-item"
+                                        href="../secciones/principales.html">Principales</a>
+                                </li>
+                                <li><a class="barraNav dropdown-item"
+                                        href="../secciones/secundarios.html">Secundarios</a>
+                                </li>
+                            </ul>
+                    </div>
             </nav>
         </header>
 
         <main>
-                <div class="contacto2">
-                    <h1>¿Querés recibir información de esta página?</h1>
-                </div>
+            <div class="contacto2">
+                <h1>¿Querés recibir información de esta página?</h1>
+            </div>
             <section class="flexContacto">
                 <div class="textoContacto">
-                    Si queres recibir información, te pedimos que completes los datos siguientes para que podamos
+                    Si querés recibir información, te pedimos que completes los datos siguientes para que podamos
                     enviarte las actualizaciones de la página y todo lo relacionado a Harry Potter.
                 </div>
-
-                <form class="row g-3">
-                    <div class="col-md-4">
-                        <label for="validationServer01" class="form-label">Nombre</label>
-                        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-                        <div class="valid-feedback">
-                            Muy bien!
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="validationServer02" class="form-label">Apellido</label>
-                        <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-                        <div class="valid-feedback">
-                            Muy bien!
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="validationServerUsername" class="form-label">E-mail</label>
-                        <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend3">e-mail</span>
-                            <input type="text" class="form-control is-invalid" id="validationServerE-mail"
-                                aria-describedby="inputGroupPrepend3 validationServerE-mailFeedback" required>
-                            <div id="validationServerE-mailFeedback" class="invalid-feedback">
-                                Escriba su E-mail válido.
+                <div class="conteiner-fluid">
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <label for="validationServer01" class="form-label">Nombre</label>
+                            <input type="text" class="form-control is-valid" id="validationServer01" value="Mark"
+                                required>
+                            <div class="valid-feedback">
+                                Muy bien!
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="validationServer03" class="form-label">Provincia</label>
-                        <input type="text" class="form-control is-invalid" id="validationServer03"
-                            aria-describedby="validationServer03Feedback" required>
-                        <div id="validationServer03Feedback" class="invalid-feedback">
-                            Por favor seleccione una provicia.
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="validationServer04" class="form-label">Ciudad</label>
-                        <select class="form-select is-invalid" id="validationServer04"
-                            aria-describedby="validationServer04Feedback" required>
-                            <option selected disabled value="">Elegir...</option>
-                            <option>...</option>
-                        </select>
-                        <div id="validationServer04Feedback" class="invalid-feedback">
-                            Por favor seleccione una ciudad
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
-                                aria-describedby="invalidCheck3Feedback" required>
-                            <label class="form-check-label" for="invalidCheck3">
-                                Acepto recibir información.
-                            </label>
-                            <div id="invalidCheck3Feedback" class="invalid-feedback">
-                                Por favor seleccione para recibir información.
+                        <div class="col-md-4">
+                            <label for="validationServer02" class="form-label">Apellido</label>
+                            <input type="text" class="form-control is-valid" id="validationServer02" value="Otto"
+                                required>
+                            <div class="valid-feedback">
+                                Muy bien!
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Enviar</button>
-                    </div>
-                </form>
+                        <div class="col-md-4">
+                            <label for="validationServerUsername" class="form-label">E-mail</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend3">e-mail</span>
+                                <input type="text" class="form-control is-invalid" id="validationServerE-mail"
+                                    aria-describedby="inputGroupPrepend3 validationServerE-mailFeedback" required>
+                                <div id="validationServerE-mailFeedback" class="invalid-feedback">
+                                    Escriba su E-mail válido.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationServer03" class="form-label">Provincia</label>
+                            <input type="text" class="form-control is-invalid" id="validationServer03"
+                                aria-describedby="validationServer03Feedback" required>
+                            <div id="validationServer03Feedback" class="invalid-feedback">
+                                Por favor seleccione una provicia.
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationServer04" class="form-label">Ciudad</label>
+                            <select class="form-select is-invalid" id="validationServer04"
+                                aria-describedby="validationServer04Feedback" required>
+                                <option selected disabled value="">Elegir...</option>
+                                <option>...</option>
+                            </select>
+                            <div id="validationServer04Feedback" class="invalid-feedback">
+                                Por favor seleccione una ciudad
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
+                                    aria-describedby="invalidCheck3Feedback" required>
+                                <label class="form-check-label" for="invalidCheck3">
+                                    Acepto recibir información.
+                                </label>
+                                <div id="invalidCheck3Feedback" class="invalid-feedback">
+                                    Por favor seleccione para recibir información.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
             </section>
         </main>
 
